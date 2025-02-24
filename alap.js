@@ -30,11 +30,11 @@ function kat(id){
     console.log(kecske[1]);
     let s=parseInt(kecske[0]);
     let o=parseInt(kecske[1]);
-    szinez(s,o);
+    /*szinez(s,o);
     szinez(s,o+1);
     szinez(s,o-1);
     szinez(s+1,o);
-    szinez(s-1,o);
+    szinez(s-1,o);*/
     if (tomb[s][o]==0) {
         document.getElementById(s+"_"+o).style.backgroundColor="red";
         tomb[s][o]=1;
@@ -45,7 +45,7 @@ function kat(id){
         tomb[s][o]=0;
     }
 }
-function szinez(s,o){
+/*function szinez(s,o){
     if (s>=0 && s<sor && o>=0 && o<oszlop) {
         if (tomb[s][o]==0) {
             document.getElementById(s+"_"+o).style.backgroundColor="red";
@@ -56,4 +56,4 @@ function szinez(s,o){
             tomb[s][o]=0;
         }
     }
-}
+}*/
